@@ -31,31 +31,37 @@
         <div class="background-shape shape-b" aria-hidden="true"></div>
 
         <header class="site-header">
-            <a class="brand" href="#home" aria-label="Go to home">ZJ</a>
+            <a class="brand" href="#home" aria-label="Go to home" data-de-attr-aria-label="Zur Startseite">ZJ</a>
+            <button
+                class="lang-toggle"
+                type="button"
+                aria-label="Auf Deutsch umschalten"
+            ></button>
             <button
                 class="menu-toggle"
                 type="button"
                 aria-expanded="false"
                 aria-controls="site-nav"
+                data-de="Menü"
             >
                 Menu
             </button>
-            <nav id="site-nav" class="site-nav" aria-label="Primary">
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#experience">Experience</a>
-                <a href="#contact">Hire Me</a>
+            <nav id="site-nav" class="site-nav" aria-label="Primary" data-de-attr-aria-label="Hauptnavigation">
+                <a href="#about" data-de="Über mich">About</a>
+                <a href="#projects" data-de="Projekte">Projects</a>
+                <a href="#experience" data-de="Erfahrung">Experience</a>
+                <a href="#contact" data-de="Kontakt">Hire Me</a>
             </nav>
         </header>
 
         <main>
             <section id="home" class="hero reveal">
                 <div class="hero-copy">
-                    <p class="eyebrow">
+                    <p class="eyebrow" data-de="Mobile- und Web-Entwickler in Saarbrücken">
                         Mobile &amp; web developer in Saarbrücken
                     </p>
-                    <h1>Hi, I'm Zaid Jarrar.</h1>
-                    <p class="lead">
+                    <h1 data-de="Hallo, ich bin Zaid Jarrar.">Hi, I'm Zaid Jarrar.</h1>
+                    <p class="lead" data-de-html="Ich mache aus Ideen ausgereifte Mobile- und Web-Produkte: native Android-Apps mit Kotlin und Jetpack Compose, plattformübergreifend mit Flutter und Full-Stack-Web mit React und Next.js. Mir ist wichtig, dass Software schnell reagiert, intuitiv bleibt und ein echtes Problem löst. KI setze ich nur dort ein, wo sie das Produkt wirklich besser macht, und ein KI-gestütztes Produkt habe ich bereits an echte Nutzer ausgeliefert. Aktuell studiere ich Informatik im letzten Jahr an der German-Jordanian University und bin im Austauschsemester an der HTW Saarland. Ich suche ein Pflichtpraktikum ab <strong>September 2026</strong>.">
                         I turn ideas into polished mobile and web products:
                         native Android with Kotlin and Jetpack Compose,
                         cross-platform with Flutter, and full-stack web with
@@ -69,7 +75,7 @@
                         <strong>September 2026</strong>.
                     </p>
                     <div class="cta-row">
-                        <a class="btn btn-primary" href="#projects"
+                        <a class="btn btn-primary" href="#projects" data-de="Projekte ansehen"
                             >View Projects</a
                         >
                         <a
@@ -77,16 +83,17 @@
                             href="assets/zaid-jarrar-cv.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
+                            data-de="Lebenslauf herunterladen"
                             >Download CV</a
                         >
                     </div>
-                    <ul class="meta-list" aria-label="Quick facts">
-                        <li>Focus: Android, Flutter, React, AI integration</li>
-                        <li>
+                    <ul class="meta-list" aria-label="Quick facts" data-de-attr-aria-label="Kurzprofil">
+                        <li data-de="Schwerpunkte: Android, Flutter, React, KI-Integration">Focus: Android, Flutter, React, AI integration</li>
+                        <li data-de="Sprachen: Arabisch (Muttersprache), Englisch (C1), Deutsch (B2)">
                             Languages: Arabic (native), English (C1), German
                             (B2)
                         </li>
-                        <li>
+                        <li data-de-html='E-Mail: <a href="mailto:jarrarzaid3@gmail.com">jarrarzaid3@gmail.com</a>'>
                             Email:
                             <a href="mailto:jarrarzaid3@gmail.com"
                                 >jarrarzaid3@gmail.com</a
@@ -100,6 +107,7 @@
                         <img
                             src="assets/zaid-jarrar.jpg"
                             alt="Portrait of Zaid Jarrar in a blue blazer"
+                            data-de-attr-alt="Porträt von Zaid Jarrar im blauen Sakko"
                         />
                     </div>
                 </div>
@@ -107,13 +115,13 @@
 
             <section id="about" class="content-section reveal">
                 <div class="section-heading">
-                    <p class="eyebrow">About Me</p>
-                    <h2>Developer mindset with product ownership</h2>
+                    <p class="eyebrow" data-de="Über mich">About Me</p>
+                    <h2 data-de="Entwicklerdenken mit Produktverantwortung">Developer mindset with product ownership</h2>
                 </div>
                 <div class="about-grid">
                     <article class="panel">
-                        <h3>Current status</h3>
-                        <p>
+                        <h3 data-de="Aktueller Stand">Current status</h3>
+                        <p data-de="Informatikstudent im letzten Jahr an der German-Jordanian University, seit März 2026 im Austauschsemester an der HTW Saarland. Drei Sommer Praxiserfahrung bei GCESoft in Amman, wo ich Android-Features und Python-Automatisierung ausgeliefert habe.">
                             Final-year Informatik student at German-Jordanian
                             University, on exchange semester at HTW Saarland
                             since March 2026. Three summers of industry
@@ -122,8 +130,8 @@
                         </p>
                     </article>
                     <article class="panel">
-                        <h3>What I build</h3>
-                        <p>
+                        <h3 data-de="Was ich baue">What I build</h3>
+                        <p data-de="Mobile Apps und Web-Produkte von Anfang bis Ende. LAZ Store (Android-Shop für Tesla-Ersatzteile mit KI-gestützter Fotoerkennung), Life OS (Flutter-Life-Manager mit deterministischem Tagesbriefing) und Uni-Plan (Studienplaner mit Konflikterkennung und Notenprognose). Frühere Experimente wie wo2go und Brewit liegen im Lab, wo ich laufende Arbeit offen zeige.">
                             Mobile apps and web products end-to-end. LAZ Store
                             (Tesla parts e-commerce Android app with AI photo
                             identification), Life OS (Flutter life manager with a
@@ -134,8 +142,8 @@
                         </p>
                     </article>
                     <article class="panel">
-                        <h3>How I work</h3>
-                        <p>
+                        <h3 data-de="Wie ich arbeite">How I work</h3>
+                        <p data-de="KI-Werkzeuge sind für mich Werkzeuge, keine Schlagworte. Ich teste Claude, GPT-4 und Cursor an echten Aufgaben und behalte das, was sich bewährt. Beim Ausliefern genauso: schnell prototypen, mit Nutzern testen, streichen was seinen Platz nicht verdient.">
                             I treat AI tools as tools, not buzzwords. I
                             benchmark Claude, GPT-4, and Cursor against real
                             tasks and keep what proves value. Same mindset for
@@ -148,57 +156,57 @@
 
             <section id="projects" class="content-section reveal">
                 <div class="section-heading">
-                    <p class="eyebrow">Selected Work</p>
-                    <h2>Products I built and shipped</h2>
+                    <p class="eyebrow" data-de="Ausgewählte Arbeiten">Selected Work</p>
+                    <h2 data-de="Produkte, die ich gebaut und ausgeliefert habe">Products I built and shipped</h2>
                 </div>
                 <div class="project-grid project-grid--compact">
                     <article class="project-card">
                         <h3>Life OS</h3>
-                        <p>
+                        <p data-de="Flutter-Life-Manager, der einen unübersichtlichen Posteingang in nachverfolgte Aufgaben verwandelt. KI nur dort, wo sie sich lohnt.">
                             Flutter life manager that turns a messy inbox into
                             tracked tasks. AI only where it earns its place.
                         </p>
                         <p class="stack-line">Flutter · Dart · Supabase · Riverpod</p>
-                        <a href="https://lab.zaidj.tech/specimen/life-os/">Try it in the lab</a>
+                        <a href="https://lab.zaidj.tech/specimen/life-os/" data-de="Im Lab ausprobieren">Try it in the lab</a>
                     </article>
 
                     <article class="project-card">
                         <h3>Uni-Plan</h3>
-                        <p>
+                        <p data-de="Studienplaner, der Stundenplan-Konflikte erkennt und deinen Notendurchschnitt vorhersagt, bevor du dich anmeldest.">
                             Course planner that catches timetable conflicts and
                             predicts your GPA before you register.
                         </p>
                         <p class="stack-line">React · TypeScript · Express</p>
-                        <a href="https://lab.zaidj.tech/specimen/uni-plan/">Try it in the lab</a>
+                        <a href="https://lab.zaidj.tech/specimen/uni-plan/" data-de="Im Lab ausprobieren">Try it in the lab</a>
                     </article>
 
                     <article class="project-card">
                         <h3>LAZ Store</h3>
-                        <p>
+                        <p data-de="Android-Shop für den Autoteile-Handel, den ich in Jordanien geführt habe, mit KI-Teileerkennung per Foto.">
                             Android storefront for the car parts shop I ran in
                             Jordan, with AI part identification from a photo.
                         </p>
                         <p class="stack-line">Kotlin · Jetpack Compose · Firebase</p>
-                        <a href="https://lab.zaidj.tech/specimen/laz-store/">Try it in the lab</a>
+                        <a href="https://lab.zaidj.tech/specimen/laz-store/" data-de="Im Lab ausprobieren">Try it in the lab</a>
                     </article>
                 </div>
                 <div class="cta-row">
-                    <a class="btn btn-primary" href="https://lab.zaidj.tech/">See the full lab</a>
+                    <a class="btn btn-primary" href="https://lab.zaidj.tech/" data-de="Zum kompletten Lab">See the full lab</a>
                 </div>
             </section>
 
             <section id="experience" class="content-section reveal">
                 <div class="section-heading">
-                    <p class="eyebrow">Experience and Education</p>
-                    <h2>Hands-on mobile and ERP product work</h2>
+                    <p class="eyebrow" data-de="Erfahrung und Ausbildung">Experience and Education</p>
+                    <h2 data-de="Praktische Arbeit an Mobile- und ERP-Produkten">Hands-on mobile and ERP product work</h2>
                 </div>
                 <div class="timeline">
                     <article class="timeline-item">
-                        <h3>Software Development Intern · GCESoft</h3>
-                        <p class="timeline-meta">
+                        <h3 data-de="Praktikant Softwareentwicklung · GCESoft">Software Development Intern · GCESoft</h3>
+                        <p class="timeline-meta" data-de="Sommer 2022, 2023, 2024 · Amman, Jordanien">
                             Summers 2022, 2023, 2024 · Amman, Jordan
                         </p>
-                        <p>
+                        <p data-de="Android-Features und Produktions-Fixes für Van-Sales- und Kassensysteme ausgeliefert, Barcode-Scanner-Workflows gebaut und ERP-Datenbereinigung mit Python automatisiert.">
                             Shipped Android features and production fixes for
                             Van Sales and POS applications, built
                             barcode-scanner workflows, and automated ERP data
@@ -207,8 +215,8 @@
                     </article>
                     <article class="timeline-item">
                         <h3>B.Sc. Informatik · German-Jordanian University</h3>
-                        <p class="timeline-meta">2021 - 2026 (expected)</p>
-                        <p>
+                        <p class="timeline-meta" data-de="2021 - 2026 (voraussichtlich)">2021 - 2026 (expected)</p>
+                        <p data-de="Schwerpunkte unter anderem Mobile Computing, KI und Algorithmen. Austauschsemester an der HTW Saarland seit März 2026.">
                             Focus areas include mobile computing, AI, and
                             algorithms. Exchange semester at HTW Saarland since
                             March 2026.
@@ -219,8 +227,8 @@
 
             <section id="stack" class="content-section reveal">
                 <div class="section-heading">
-                    <p class="eyebrow">Core Stack</p>
-                    <h2>Technologies I use most</h2>
+                    <p class="eyebrow" data-de="Kern-Stack">Core Stack</p>
+                    <h2 data-de="Technologien, die ich am häufigsten nutze">Technologies I use most</h2>
                 </div>
                 <ul class="chip-list">
                     <li>Kotlin</li>
@@ -242,10 +250,10 @@
 
             <section id="contact" class="content-section contact reveal">
                 <div class="section-heading">
-                    <p class="eyebrow">Hire Me</p>
-                    <h2>Open to Pflichtpraktikum opportunities</h2>
+                    <p class="eyebrow" data-de="Kontakt">Hire Me</p>
+                    <h2 data-de="Offen für ein Pflichtpraktikum">Open to Pflichtpraktikum opportunities</h2>
                 </div>
-                <p class="contact-copy">
+                <p class="contact-copy" data-de="Ab September 2026 bin ich verfügbar für Praktika in der Android-Entwicklung, bei KI-gestützten Produktfeatures oder in automatisierungsnahen Engineering-Rollen.">
                     I am available from September 2026 for internships in
                     Android development, AI-powered product features, or
                     automation-focused engineering roles.
@@ -254,6 +262,7 @@
                     <a
                         class="btn btn-primary"
                         href="mailto:jarrarzaid3@gmail.com"
+                        data-de="E-Mail senden"
                         >Send Email</a
                     >
                     <a
