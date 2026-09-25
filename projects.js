@@ -51,7 +51,7 @@ window.FEATURED_PROJECTS = [
     stack: ['Kotlin', 'Jetpack Compose', 'Firebase', 'AI'],
     theme: {
       light: { bg: '#fbeeee', surface: '#fff8f8', ink: '#4a1414', muted: '#7d2a2a', accent: '#c62828', onAccent: '#ffffff' },
-      dark: { bg: '#2c0f0f', surface: '#3a1414', ink: '#fbe4e4', muted: '#f0b6b6', accent: '#e05a5a', onAccent: '#2c0f0f' },
+      dark: { bg: '#2c0f0f', surface: '#3a1414', ink: '#fbe4e4', muted: '#f0b6b6', accent: '#e36b6b', onAccent: '#2c0f0f' },
     },
     links: {
       github: 'https://github.com/zzaaid03/laz-store',
