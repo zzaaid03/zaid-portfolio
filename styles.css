@@ -162,14 +162,6 @@ main {
   padding: 24px 0 96px;
 }
 
-.hero {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  align-items: center;
-  gap: clamp(28px, 5vw, 70px);
-  padding-top: clamp(18px, 4vw, 40px);
-}
-
 .eyebrow {
   margin: 0 0 8px;
   font-size: 0.83rem;
@@ -189,12 +181,6 @@ h3 {
 h1 {
   margin-bottom: 16px;
   font-size: clamp(2rem, 5vw, 3.5rem);
-}
-
-.lead {
-  margin: 0;
-  font-size: clamp(1rem, 1.8vw, 1.18rem);
-  color: var(--muted);
 }
 
 .cta-row {
@@ -233,40 +219,6 @@ h1 {
   border-color: var(--line);
 }
 
-.meta-list {
-  list-style: none;
-  padding: 0;
-  margin: 24px 0 0;
-  display: grid;
-  gap: 10px;
-  color: var(--muted);
-  font-size: 0.96rem;
-}
-
-.meta-list a {
-  color: var(--accent);
-}
-
-.hero-photo-wrap {
-  display: flex;
-  justify-content: center;
-}
-
-.hero-photo-card {
-  width: min(480px, 100%);
-  background: linear-gradient(150deg, var(--photo-grad-a), var(--photo-grad-b));
-  border-radius: var(--radius);
-  padding: 12px;
-  box-shadow: var(--shadow);
-}
-
-.hero-photo-card img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: calc(var(--radius) - 10px);
-}
-
 .content-section {
   margin-top: clamp(72px, 9vw, 110px);
 }
@@ -303,47 +255,6 @@ h1 {
 .panel p {
   margin: 0;
   color: var(--muted);
-}
-
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
-}
-
-.project-card {
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: var(--radius-sm);
-  padding: 22px;
-  box-shadow: var(--shadow);
-}
-
-.project-card p {
-  margin-top: 0;
-  color: var(--muted);
-}
-
-.stack-line {
-  margin-top: 12px;
-  font-family: "IBM Plex Mono", "Consolas", monospace;
-  font-size: 0.84rem;
-  color: var(--accent-ink);
-}
-
-.project-card a {
-  font-weight: 600;
-  color: var(--accent);
-  text-decoration: none;
-}
-
-.project-card a:hover,
-.project-card a:focus-visible {
-  text-decoration: underline;
-}
-
-.project-grid--compact {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .timeline {
@@ -424,15 +335,7 @@ h1 {
 }
 
 @media (max-width: 980px) {
-  .hero {
-    grid-template-columns: 1fr;
-  }
-
   .about-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .project-grid {
     grid-template-columns: 1fr;
   }
 }
