@@ -26,7 +26,7 @@ window.FEATURED_PROJECTS = [
       en: 'It reads your inbox to track job applications, tasks and subscriptions, and writes a daily brief with no model in it. Documents get found by describing them, not by their file name.',
       de: 'Er verfolgt Bewerbungen, Aufgaben und Abos direkt aus deinem Posteingang und schreibt ein Tages-Briefing, das komplett ohne KI-Modell auskommt. Dokumente findest du über eine Beschreibung statt über den Dateinamen.',
     },
-    stack: ['Flutter', 'Dart', 'Supabase', 'PostgreSQL', 'Supabase Storage', 'Groq / GPT-OSS 120B', 'Gmail API'],
+    stack: ['Flutter', 'Supabase', 'GPT-OSS', 'Gmail API'],
     theme: {
       light: { bg: '#f2f0fb', surface: '#faf9fe', ink: '#221a4d', muted: '#4b3f85', accent: '#5b3fd6', onAccent: '#ffffff' },
       dark: { bg: '#160f30', surface: '#1e1747', ink: '#e9e5fb', muted: '#c2b8f0', accent: '#8a72f0', onAccent: '#160f30' },
@@ -67,8 +67,8 @@ window.FEATURED_PROJECTS = [
       de: 'Beschreib den Kaffee, den du willst, und es rechnet rückwärts zum Rezept.',
     },
     description: {
-      en: 'Still in the lab: the recipe engine and the live brew timer hold up, but the Bean Conqueror export does not round trip yet and there is no saved brew log.',
-      de: 'Noch in der Entwicklung: die Rezept-Engine und der Live-Brüh-Timer funktionieren gut, aber der Bean-Conqueror-Export klappt noch nicht rund, und es gibt kein gespeichertes Brüh-Log.',
+      en: 'You pick the method, roast, process and the taste you want, and it builds the full recipe with a timed pour schedule. Still in the lab: the export does not round trip yet and nothing is saved between sessions.',
+      de: 'Du wählst Methode, Röstung, Aufbereitung und den Geschmack, den du willst, und es erstellt das komplette Rezept mit Zeitplan für jeden Aufguss. Noch in der Entwicklung: der Export klappt noch nicht in beide Richtungen, und zwischen Sitzungen wird nichts gespeichert.',
     },
     stack: ['React', 'TypeScript'],
     theme: {
