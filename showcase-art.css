@@ -1,0 +1,361 @@
+/* Decorative CSS-drawn device illustrations for project showcase cards. */
+
+.device {
+  --_bg: var(--sc-bg, #e9e9ee);
+  --_surface: var(--sc-surface, #ffffff);
+  --_ink: var(--sc-ink, #1a1a1f);
+  --_muted: var(--sc-muted, #8a8a93);
+  --_accent: var(--sc-accent, #3d5afe);
+  --_on-accent: var(--sc-on-accent, #ffffff);
+
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  background: var(--_bg);
+  filter: drop-shadow(0 0.6em 1.4em rgba(0, 0, 0, 0.25));
+}
+
+.device * {
+  box-sizing: border-box;
+}
+
+/* ---------- phone frame ---------- */
+
+.device--phone {
+  aspect-ratio: 9 / 19;
+  border-radius: 12%/6%;
+  padding: 4% 3%;
+  border: 1px solid color-mix(in srgb, var(--_ink) 15%, transparent);
+}
+
+.device--phone .device__notch {
+  width: 28%;
+  height: 3%;
+  margin: 0 auto 3%;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--_ink) 55%, transparent);
+}
+
+.device--phone .device__screen {
+  width: 100%;
+  height: 91%;
+  border-radius: 9%/4%;
+  background: var(--_surface);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 6%;
+  gap: 5%;
+}
+
+/* ---------- browser frame ---------- */
+
+.device--browser {
+  aspect-ratio: 4 / 3;
+  border-radius: 4%;
+  border: 1px solid color-mix(in srgb, var(--_ink) 15%, transparent);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.device--browser .device__chrome {
+  flex: 0 0 auto;
+  height: 10%;
+  min-height: 1.6em;
+  background: color-mix(in srgb, var(--_ink) 6%, var(--_surface));
+  display: flex;
+  align-items: center;
+  gap: 4%;
+  padding: 0 4%;
+  border-bottom: 1px solid color-mix(in srgb, var(--_ink) 10%, transparent);
+}
+
+.device--browser .device__dot {
+  width: 6%;
+  aspect-ratio: 1;
+  max-width: 0.7em;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--_ink) 25%, transparent);
+}
+
+.device--browser .device__bar {
+  flex: 1;
+  height: 45%;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--_ink) 8%, transparent);
+}
+
+.device--browser .device__screen {
+  flex: 1;
+  background: var(--_surface);
+  padding: 6%;
+  display: flex;
+  flex-direction: column;
+  gap: 6%;
+  overflow: hidden;
+}
+
+/* ---------- life-os: inbox turning into a task ---------- */
+
+.art--life-os .device__row {
+  display: flex;
+  align-items: center;
+  gap: 8%;
+  padding: 6% 5%;
+  border-radius: 0.5em;
+  background: color-mix(in srgb, var(--_ink) 4%, transparent);
+}
+
+.art--life-os .device__row-dot {
+  width: 12%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--_ink) 20%, transparent);
+  flex: 0 0 auto;
+}
+
+.art--life-os .device__row-lines {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 18%;
+}
+
+.art--life-os .device__row-line {
+  height: 14%;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--_ink) 18%, transparent);
+}
+
+.art--life-os .device__row-line--short {
+  width: 55%;
+}
+
+.art--life-os .device__row--active {
+  background: color-mix(in srgb, var(--_accent) 14%, transparent);
+  border: 1px solid color-mix(in srgb, var(--_accent) 40%, transparent);
+}
+
+.art--life-os .device__row--active .device__row-dot {
+  background: var(--_accent);
+}
+
+.art--life-os .device__arrow {
+  align-self: center;
+  text-align: center;
+  color: var(--_muted);
+  font-size: 0.75em;
+  line-height: 1;
+}
+
+.art--life-os .device__task {
+  display: flex;
+  align-items: center;
+  gap: 8%;
+  padding: 7% 5%;
+  border-radius: 0.6em;
+  background: var(--_surface);
+  border: 1px solid color-mix(in srgb, var(--_accent) 35%, transparent);
+}
+
+.art--life-os .device__check {
+  flex: 0 0 auto;
+  width: 16%;
+  aspect-ratio: 1;
+  border-radius: 30%;
+  background: var(--_accent);
+  color: var(--_on-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85em;
+  line-height: 1;
+}
+
+.art--life-os .device__task-lines {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 18%;
+}
+
+.art--life-os .device__task-line {
+  height: 14%;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--_ink) 22%, transparent);
+}
+
+.art--life-os .device__task-line--short {
+  width: 40%;
+  background: var(--_accent);
+}
+
+/* ---------- laz-store: camera viewfinder identifying a part ---------- */
+
+.art--laz-store .device__viewfinder {
+  position: relative;
+  flex: 1;
+  border-radius: 0.5em;
+  background: color-mix(in srgb, var(--_ink) 82%, var(--_surface));
+  overflow: hidden;
+}
+
+.art--laz-store .device__corner {
+  position: absolute;
+  width: 16%;
+  height: 16%;
+  border: 0.18em solid var(--_accent);
+}
+
+.art--laz-store .device__corner--tl {
+  top: 8%;
+  left: 8%;
+  border-right: none;
+  border-bottom: none;
+  border-top-left-radius: 0.3em;
+}
+
+.art--laz-store .device__corner--tr {
+  top: 8%;
+  right: 8%;
+  border-left: none;
+  border-bottom: none;
+  border-top-right-radius: 0.3em;
+}
+
+.art--laz-store .device__corner--bl {
+  bottom: 8%;
+  left: 8%;
+  border-right: none;
+  border-top: none;
+  border-bottom-left-radius: 0.3em;
+}
+
+.art--laz-store .device__corner--br {
+  bottom: 8%;
+  right: 8%;
+  border-left: none;
+  border-top: none;
+  border-bottom-right-radius: 0.3em;
+}
+
+.art--laz-store .device__part {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 46%;
+  height: 34%;
+  background: color-mix(in srgb, var(--_surface) 55%, transparent);
+  clip-path: polygon(15% 0%, 85% 0%, 100% 35%, 100% 100%, 0% 100%, 0% 35%);
+}
+
+.art--laz-store .device__result {
+  flex: 0 0 auto;
+  margin-top: 5%;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0.35em 0.8em;
+  border-radius: 999px;
+  background: var(--_accent);
+  color: var(--_on-accent);
+  font-size: 0.7em;
+  line-height: 1;
+}
+
+.art--laz-store .device__result-dot {
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background: var(--_on-accent);
+  flex: 0 0 auto;
+}
+
+.art--laz-store .device__result-line {
+  width: 3.2em;
+  height: 0.35em;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--_on-accent) 70%, transparent);
+}
+
+/* ---------- brewit: recipe card with bars and pour steps ---------- */
+
+.art--brewit .device__title {
+  flex: 0 0 auto;
+  width: 45%;
+  height: 0.7em;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--_ink) 25%, transparent);
+}
+
+.art--brewit .device__params {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+}
+
+.art--brewit .device__param {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+
+.art--brewit .device__param-label {
+  flex: 0 0 18%;
+  height: 0.5em;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--_ink) 16%, transparent);
+}
+
+.art--brewit .device__param-track {
+  flex: 1;
+  height: 0.55em;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--_ink) 8%, transparent);
+  overflow: hidden;
+}
+
+.art--brewit .device__param-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: var(--_accent);
+}
+
+.art--brewit .device__steps {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8%;
+  justify-content: center;
+}
+
+.art--brewit .device__step {
+  display: flex;
+  align-items: center;
+  gap: 6%;
+}
+
+.art--brewit .device__step-num {
+  flex: 0 0 auto;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--_accent) 16%, transparent);
+  color: var(--_accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65em;
+  line-height: 1;
+}
+
+.art--brewit .device__step-line {
+  flex: 1;
+  height: 0.5em;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--_ink) 14%, transparent);
+}
