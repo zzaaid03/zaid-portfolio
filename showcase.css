@@ -425,6 +425,57 @@
   }
 }
 
+.sc-outgoing {
+  pointer-events: none;
+}
+
+.showcase-art-wrap {
+  touch-action: pan-y;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  /*
+   * Transitioning the resolved properties (background-color, color, border-color,
+   * box-shadow) picks up the --sc-* custom property swap on project change without
+   * needing @property: the transition engine compares the before/after computed
+   * value of the real property, not the custom property token.
+   */
+  .showcase,
+  .showcase-card,
+  .showcase-status,
+  .showcase-desc,
+  .showcase-tagline,
+  .showcase-side-label,
+  .showcase-links .btn-primary,
+  .showcase-links .btn-ghost,
+  .showcase-lab-link,
+  .showcase-chips li,
+  .showcase-nav-btn,
+  .showcase-swatch,
+  .showcase-word {
+    transition: background-color 0.35s ease, color 0.35s ease, border-color 0.35s ease,
+      box-shadow 0.35s ease;
+  }
+
+  .showcase-art-float.sc-loaded {
+    animation: sc-float 6s ease-in-out infinite;
+  }
+
+  @keyframes sc-float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-6px);
+    }
+  }
+
+  .showcase-art-tilt.sc-tilt-settle {
+    transition: transform 0.25s ease-out;
+  }
+}
+
 .showcase-card {
   position: relative;
   overflow: hidden;
@@ -545,6 +596,17 @@
 
 .showcase-art-wrap .device {
   width: 100%;
+}
+
+.showcase-art-float,
+.showcase-art-tilt {
+  width: 100%;
+}
+
+.showcase-art-tilt {
+  position: relative;
+  transform-style: preserve-3d;
+  will-change: transform;
 }
 
 .showcase-side {
