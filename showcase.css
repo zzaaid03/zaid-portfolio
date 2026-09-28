@@ -421,6 +421,10 @@
   margin-top: calc(var(--sc-row-gap) * -1 - var(--sc-word-fs) * 0.3);
 }
 
+.sc-word-inner::before {
+  content: attr(data-word);
+}
+
 @media (prefers-color-scheme: dark) {
   .showcase-word {
     opacity: 0.17;

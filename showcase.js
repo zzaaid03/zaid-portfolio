@@ -168,7 +168,7 @@ function setWordText(newText, direction) {
   const oldInner = liveEl.get(wordEl) || null;
   const newInner = document.createElement('span');
   newInner.className = 'sc-word-inner';
-  newInner.textContent = newText;
+  newInner.dataset.word = newText;
   wordEl.appendChild(newInner);
   liveEl.set(wordEl, newInner);
   swapContent(wordEl, oldInner, newInner, direction, 'word');
