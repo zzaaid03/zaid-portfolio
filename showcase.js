@@ -34,6 +34,7 @@ const statusEl = document.getElementById('sc-status');
 const nameEl = document.getElementById('sc-name');
 const pitchEl = document.getElementById('sc-pitch');
 const descEl = document.getElementById('sc-desc');
+const hardEl = document.getElementById('sc-hard');
 const linkLabEl = document.getElementById('sc-link-lab');
 const linkGithubEl = document.getElementById('sc-link-github');
 const artEl = document.getElementById('sc-art');
@@ -324,6 +325,7 @@ function renderProject(index, direction) {
   nameEl.textContent = project.name;
   pitchEl.textContent = project.pitch[lang] || project.pitch.en;
   descEl.textContent = project.description[lang] || project.description.en;
+  hardEl.textContent = project.hard[lang] || project.hard.en;
 
   linkLabEl.textContent = t('tryLab');
   linkLabEl.href = project.links.lab;

@@ -450,6 +450,7 @@
   .showcase-card,
   .showcase-status,
   .showcase-desc,
+  .showcase-hard,
   .showcase-tagline,
   .showcase-side-label,
   .showcase-links .btn-primary,
@@ -572,6 +573,13 @@
 .showcase-desc {
   margin: 0;
   color: var(--sc-muted);
+}
+
+.showcase-hard {
+  margin: 0;
+  color: var(--sc-muted);
+  padding-left: 12px;
+  border-left: 2px solid var(--sc-accent);
 }
 
 .showcase-links {

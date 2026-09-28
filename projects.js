@@ -7,6 +7,7 @@
  * @property {'shipped'|'in-development'} status
  * @property {LocalText} pitch        one line, max ~12 words
  * @property {LocalText} description  1-2 short sentences
+ * @property {LocalText} hard         one line, the hard part
  * @property {string[]} stack
  * @property {{ light: Palette, dark: Palette }} theme
  * @property {{ github: string, lab: string }} links
@@ -25,6 +26,10 @@ window.FEATURED_PROJECTS = [
     description: {
       en: 'It reads your inbox to track job applications, tasks and subscriptions, and writes a daily brief with no model in it. Documents get found by describing them, not by their file name.',
       de: 'Er verfolgt Bewerbungen, Aufgaben und Abos direkt aus deinem Posteingang und schreibt ein Tages-Briefing, das komplett ohne KI-Modell auskommt. Dokumente findest du über eine Beschreibung statt über den Dateinamen.',
+    },
+    hard: {
+      en: 'The hard part was the email itself: picking the right model, then chasing edge cases until any message that comes in, however messy, becomes the right task without the model making one up.',
+      de: 'Das Schwierigste war die E-Mail selbst: das richtige Modell finden und dann Randfälle jagen, bis jede eingehende Nachricht, egal wie chaotisch, zur richtigen Aufgabe wird, ohne dass das Modell etwas erfindet.',
     },
     stack: ['Flutter', 'Supabase', 'GPT-OSS', 'Gmail API'],
     theme: {
@@ -45,8 +50,12 @@ window.FEATURED_PROJECTS = [
       de: 'Autoteile-Shop, den ich in Jordanien geführt habe, jetzt als Android-App.',
     },
     description: {
-      en: 'Bilingual Android storefront with role-based interfaces for customers, employees and admins. A customer photographs a part they cannot name and gets AI matches scoped to the parts I actually stocked.',
-      de: 'Zweisprachige Android-App mit rollenbasierten Oberflächen für Kunden, Mitarbeiter und Admins. Ein Kunde fotografiert ein Teil, das er nicht benennen kann, und bekommt KI-Treffer aus dem Sortiment, das ich wirklich geführt habe.',
+      en: 'Bilingual Android storefront with separate interfaces for customers, employees and admins. A customer photographs a part they cannot name, the AI identifies it, and if I did not stock it, the request lands on my admin screen as a potential order for me to price and source.',
+      de: 'Zweisprachiger Android-Shop mit eigenen Oberflächen für Kunden, Mitarbeiter und Admins. Wer ein Teil nicht benennen kann, fotografiert es, die KI erkennt es, und wenn ich es nicht auf Lager hatte, landet die Anfrage als mögliche Bestellung in meinem Admin-Bereich, damit ich sie kalkulieren und besorgen kann.',
+    },
+    hard: {
+      en: "The hard part was keeping it secure and stable: in a load test it handled 170 users at once on Firebase's free plan.",
+      de: 'Das Schwierigste war, die App sicher und stabil zu halten: Im Lasttest lief sie mit 170 gleichzeitigen Nutzern auf dem kostenlosen Firebase-Tarif.',
     },
     stack: ['Kotlin', 'Jetpack Compose', 'Firebase', 'AI'],
     theme: {
@@ -69,6 +78,10 @@ window.FEATURED_PROJECTS = [
     description: {
       en: 'You pick the method, roast, process and the taste you want, and it builds the full recipe with a timed pour schedule. Still in the lab: the export does not round trip yet and nothing is saved between sessions.',
       de: 'Du wählst Methode, Röstung, Aufbereitung und den Geschmack, den du willst, und es erstellt das komplette Rezept mit Zeitplan für jeden Aufguss. Noch in der Entwicklung: der Export klappt noch nicht in beide Richtungen, und zwischen Sitzungen wird nichts gespeichert.',
+    },
+    hard: {
+      en: 'The hard part is turning a taste into numbers. "Less bitter" has to become a grind, a water temperature and a ratio I can actually defend.',
+      de: 'Das Schwierigste ist, einen Geschmack in Zahlen zu übersetzen. Aus „weniger bitter“ müssen Mahlgrad, Wassertemperatur und Verhältnis werden, die ich wirklich begründen kann.',
     },
     stack: ['React', 'TypeScript'],
     theme: {
