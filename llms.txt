@@ -1,0 +1,18 @@
+# Zaid Jarrar
+
+> Mobile and web developer who ships complete products, end to end. Final-year B.Sc. Informatik student at German-Jordanian University (exchange semester at HTW Saarland), graduating May 2027. Interning at Mercedes-Benz AG from October 2026, open to full-time roles from May/June 2027.
+
+This site is Zaid's portfolio: who he is, featured projects, education, experience and contact. Live demos of each project are in The Lab at lab.zaidj.tech.
+
+## Featured projects
+- [Life OS](https://lab.zaidj.tech/specimen/life-os/): Flutter and Supabase. A model reads your inbox to track job applications, tasks and subscriptions. The daily brief is built in code with no model in it, on purpose.
+- [LAZ Store](https://lab.zaidj.tech/specimen/laz-store/): Kotlin, Jetpack Compose and Firebase. Android app for a Tesla aftermarket parts shop Zaid ran in Jordan. Requests for parts he did not stock became potential orders for him to price and source.
+- [Brewit](https://lab.zaidj.tech/specimen/brewit/): React and TypeScript. Works backwards from how you want coffee to taste to a full recipe. Work in progress.
+- [Uni-Plan](https://lab.zaidj.tech/specimen/uni-plan/): React, Express and TypeScript. Checks a semester for course clashes and GPA impact before you register.
+
+## Links
+- [Portfolio](https://www.zaidj.tech/)
+- [The Lab](https://lab.zaidj.tech/)
+- [CV (PDF)](https://www.zaidj.tech/assets/zaid-jarrar-cv.pdf)
+- [GitHub](https://github.com/zzaaid03)
+- [LinkedIn](https://www.linkedin.com/in/zaidjarrar/)
