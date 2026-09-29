@@ -31,7 +31,7 @@ window.FEATURED_PROJECTS = [
       en: 'The hard part was the email itself: picking the right model, then chasing edge cases until any message that comes in, however messy, becomes the right task without the model making one up.',
       de: 'Das Schwierigste war die E-Mail selbst: das richtige Modell finden und dann Randfälle jagen, bis jede eingehende Nachricht, egal wie chaotisch, zur richtigen Aufgabe wird, ohne dass das Modell etwas erfindet.',
     },
-    stack: ['Flutter', 'Supabase', 'GPT-OSS', 'Gmail API'],
+    stack: ['Flutter', 'Supabase', 'OpenAI', 'Gmail API'],
     theme: {
       light: { bg: '#f2f0fb', surface: '#faf9fe', ink: '#221a4d', muted: '#4b3f85', accent: '#5b3fd6', onAccent: '#ffffff' },
       dark: { bg: '#160f30', surface: '#1e1747', ink: '#e9e5fb', muted: '#c2b8f0', accent: '#8a72f0', onAccent: '#160f30' },
