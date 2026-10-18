@@ -10,7 +10,7 @@
  * @property {LocalText} hard         one line, the hard part
  * @property {string[]} stack
  * @property {{ light: Palette, dark: Palette }} theme
- * @property {{ github: string, lab: string }} links
+ * @property {{ github: string, lab: string, live?: string }} links  live = the real app, if public
  */
 
 /** @type {FeaturedProject[]} */
@@ -24,8 +24,8 @@ window.FEATURED_PROJECTS = [
       de: 'Flutter-Life-Manager, der einen unübersichtlichen Posteingang in nachverfolgte Aufgaben verwandelt.',
     },
     description: {
-      en: 'It reads your inbox to track job applications, tasks and subscriptions, and writes a daily brief with no model in it. Documents get found by describing them, not by their file name.',
-      de: 'Er verfolgt Bewerbungen, Aufgaben und Abos direkt aus deinem Posteingang und schreibt ein Tages-Briefing, das komplett ohne KI-Modell auskommt. Dokumente findest du über eine Beschreibung statt über den Dateinamen.',
+      en: 'It reads your inbox to track job applications, tasks and subscriptions, and writes a daily brief with no model in it. Lately it also cooks with you: ask for a recipe in your own words, send the ingredients to a grocery list, then follow it one step at a time with timers.',
+      de: 'Er verfolgt Bewerbungen, Aufgaben und Abos direkt aus deinem Posteingang und schreibt ein Tages-Briefing, das komplett ohne KI-Modell auskommt. Neu ist das Kochen: Rezept in eigenen Worten anfragen, Zutaten auf die Einkaufsliste setzen und dann Schritt für Schritt mit Timern kochen.',
     },
     hard: {
       en: 'The hard part was the email itself: picking the right model, then chasing edge cases until any message that comes in, however messy, becomes the right task without the model making one up.',
@@ -39,6 +39,7 @@ window.FEATURED_PROJECTS = [
     links: {
       github: 'https://github.com/zzaaid03/life-os',
       lab: 'https://lab.zaidj.tech/specimen/life-os/',
+      live: 'https://lifeos.deadthrone.dev',
     },
   },
   {

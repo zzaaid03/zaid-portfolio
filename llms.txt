@@ -5,7 +5,7 @@
 This site is Zaid's portfolio: who he is, featured projects, education, experience and contact. Live demos of each project are in The Lab at lab.zaidj.tech.
 
 ## Featured projects
-- [Life OS](https://lab.zaidj.tech/specimen/life-os/): Flutter and Supabase. A model reads your inbox to track job applications, tasks and subscriptions. The daily brief is built in code with no model in it, on purpose.
+- [Life OS](https://lab.zaidj.tech/specimen/life-os/): Flutter and Supabase. A model reads your inbox to track job applications, tasks and subscriptions. The daily brief is built in code with no model in it, on purpose. It also writes recipes from a plain request, sends the ingredients to a grocery list and has a step-by-step cook mode with timers. Runs on web, iPhone and Android; the web app is live at https://lifeos.deadthrone.dev with a demo mode that needs no sign-up.
 - [LAZ Store](https://lab.zaidj.tech/specimen/laz-store/): Kotlin, Jetpack Compose and Firebase. Android app for a Tesla aftermarket parts shop Zaid ran in Jordan. Requests for parts he did not stock became potential orders for him to price and source.
 - [Brewit](https://lab.zaidj.tech/specimen/brewit/): React and TypeScript. Works backwards from how you want coffee to taste to a full recipe. Work in progress.
 - [Uni-Plan](https://lab.zaidj.tech/specimen/uni-plan/): React, Express and TypeScript. Checks a semester for course clashes and GPA impact before you register.
