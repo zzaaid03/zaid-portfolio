@@ -4,6 +4,7 @@
 const SHOWCASE_STRINGS = {
   en: {
     tryLab: 'Try it in the lab',
+    openLive: 'Open the live app',
     sourceGithub: 'Source on GitHub',
     shipped: 'Shipped',
     inDevelopment: 'In development',
@@ -14,6 +15,7 @@ const SHOWCASE_STRINGS = {
   },
   de: {
     tryLab: 'Im Lab ausprobieren',
+    openLive: 'Live-App öffnen',
     sourceGithub: 'Code auf GitHub',
     shipped: 'Ausgeliefert',
     inDevelopment: 'In Entwicklung',
@@ -36,6 +38,7 @@ const pitchEl = document.getElementById('sc-pitch');
 const descEl = document.getElementById('sc-desc');
 const hardEl = document.getElementById('sc-hard');
 const linkLabEl = document.getElementById('sc-link-lab');
+const linkLiveEl = document.getElementById('sc-link-live');
 const linkGithubEl = document.getElementById('sc-link-github');
 const artEl = document.getElementById('sc-art');
 const chipsLabelEl = document.getElementById('sc-chips-label');
@@ -329,6 +332,9 @@ function renderProject(index, direction) {
 
   linkLabEl.textContent = t('tryLab');
   linkLabEl.href = project.links.lab;
+  linkLiveEl.hidden = !project.links.live;
+  linkLiveEl.textContent = t('openLive');
+  linkLiveEl.href = project.links.live || '';
   linkGithubEl.textContent = t('sourceGithub');
   linkGithubEl.href = project.links.github;
 

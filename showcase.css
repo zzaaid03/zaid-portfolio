@@ -586,6 +586,11 @@
   margin-top: 6px;
 }
 
+/* .btn sets display, which would otherwise beat the hidden attribute. */
+.showcase-links [hidden] {
+  display: none;
+}
+
 .showcase-links .btn-primary {
   background: var(--sc-accent);
   color: var(--sc-on-accent);
